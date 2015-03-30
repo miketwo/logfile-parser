@@ -1,0 +1,6 @@
+starting task A
+starting task B
+finishing task B
+starting task C
+starting task D
+finishing task A
