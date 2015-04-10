@@ -20,6 +20,18 @@ task C
 task D
 ```
 
+# Installation and Usage
+```
+git clone https://github.com/miketwo/logfile-parser.git
+cd logfile-parser
+./parser.py example.txt
+```
+
+# Unit tests
+```
+python test_parser.py
+```
+
 # Assumptions and expected behaviour
 
 
@@ -53,7 +65,7 @@ Task A does NOT show up in results. No errors thrown.
 #### Task names can be any combination of characters.
 The following is totally cool:
 ```text
-starting task @&#$&)(*!@*AA123)
+starting @&#$&)(*!@*AA123)
 ```
 
 

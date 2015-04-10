@@ -6,23 +6,7 @@ Parses a text file with lines that say either 'starting <something>' or
 'finishing <something>', and emits all <something>'s that were started but not
 finished.
 
-USAGE:
-    parser.py example.txt
-
-EXAMPLE:
-    If the file contains:
-
-    starting task A
-    starting task B
-    finishing task B
-    starting task C
-    starting task D
-    finishing task A
-
-    The program will emit:
-
-    task C
-    task D
+See README for more details.
 '''
 import argparse
 import re

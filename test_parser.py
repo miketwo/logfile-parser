@@ -51,7 +51,6 @@ finishing task A'''
 
     def test_parse_order_doesnt_matter(self):
         text = '''\
-finishing task B
 finishing task A
 starting task A'''
         expected = []
@@ -68,13 +67,13 @@ finishing task B
 
     def test_weird_task_names(self):
         text = '''\
-starting task &#^@)*(^@)()
-starting task ^%#$^@#&(*&)
-finishing task ^%#$^@#&(*&)
-starting task !@G%G%G%
-starting task (GKM*FJ$*)
-finishing task &#^@)*(^@)()'''
-        expected = ['task (GKM*FJ$*)', 'task !@G%G%G%']
+starting &#^@)*(^@)()
+starting ^%#$^@#&(*&)
+finishing ^%#$^@#&(*&)
+starting !@G%G%G%
+starting (GKM*FJ$*)
+finishing &#^@)*(^@)()'''
+        expected = ['(GKM*FJ$*)', '!@G%G%G%']
         result = parse(text)
         self.assertItemsEqual(result, expected)
 
